@@ -45,6 +45,7 @@ A [**B-tree**](https://en.wikipedia.org/wiki/B-tree) of order m is a tree which 
 The benchmark was configured as follows:
 * CPU: Intel Xeon E3-1245 @ 3.3 GHz;
 * Windows 10, 64bit, .NET Standard 1.2
+* DDR3 Kingston @ 1333 MHz
 
 >**Adding in a single thread:**
 
@@ -64,6 +65,31 @@ The benchmark was configured as follows:
 | SortedSet&lt;...&gt; | **Yes** | 10,000,000 | ~~&nbsp;1,230&nbsp;~~ | ~~&nbsp;123&nbsp;~~ | ~~&nbsp;16%&nbsp;~~ |
 | HashSet&lt;...&gt; | No | 10,000,000 | 47.3 | 4,73 | 422%	|
 | Dictionary&lt;...&gt; | No | 10,000,000 | 86.5 | 8,65 | 231% |		
+
+&nbsp;
+## MemoryStream generic class \[where T : struct\]
+#### [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs)
+   + `Methods:` Append, Close, Length, Position, Read, Seek, Write.
+
+&nbsp;
+## Source code
+See the [Github](https://github.com/FriendlyCSharp/Databases).
+
+&nbsp;
+## Benchmark 
+The benchmark was configured as follows:
+* CPU: Intel Xeon E3-1245 @ 3.3 GHz;
+* Windows 10, 64bit, .NET Standard 1.2
+* DDR3 Kingston @ 1333 MHz
+
+| [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs) | Append | Read | Write |
+| --- | ---: | ---: | ---: |
+| IOPS \[T =   8 Byte\] | **333**,000,000 | **1,100**,000,000 | **750**,000,000 |
+| IOPS \[T =  16 Byte\] | **190**,000,000 | **550**,000,000 | **470**,000,000 |
+| IOPS \[T =  32 Byte\] | **98**,000,000 | **280**,000,000 | **246**,000,000 |
+| IOPS \[T =  64 Byte\] | 42,000,000 | **130**,000,000 | **95**,000,000 |
+| IOPS \[T = 128 Byte\] | 20,000,000 | 48,000,000 | 33,000,000 |
+| IOPS \[T = 256 Byte\] | 10,000,000 | 22,000,000 | 15,000,000 |
 
 &nbsp;　
 ## Install
