@@ -64,8 +64,8 @@ The benchmark was configured as follows:
 | Dictionary&lt;...&gt; | No | 10,000,000 | 86.5 | 8,65 | 231% |		
 
 &nbsp;
-### MemoryStream generic class \[where T : struct\]
-#### [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs)
+### MemoryStream generic class
+#### [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs) \[where T : struct\]
    + `Methods:` Append, Close, Length, Position, Read, Seek, Write.
 
 ### Source code
