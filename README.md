@@ -42,7 +42,7 @@ A [**B-tree**](https://en.wikipedia.org/wiki/B-tree) of order m is a tree which 
 The benchmark was configured as follows:
 * CPU: Intel Xeon E3-1245 @ 3.3 GHz;
 * Windows 10, 64bit, .NET Standard 1.2
-* DDR3 Kingston @ 1333 MHz
+* 4x4GB DDR3 Kingston @ 1333 MHz
 
 >**Adding in a single thread:**
 
@@ -75,18 +75,18 @@ See the [Github](https://github.com/FriendlyCSharp/Databases).
 The benchmark was configured as follows:
 * CPU: Intel Xeon E3-1245 @ 3.3 GHz;
 * Windows 10, 64bit, .NET Standard 1.2
-* DDR3 Kingston @ 1333 MHz
+* 4x4 GB DDR3 Kingston @ 1333 MHz
 
-| [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs) | Append | Read | Write |
-| --- | ---: | ---: | ---: |
-| IOPS \[T =    8 Byte\] | **345**,000,000 | **1,150**,000,000 | **1,100**,000,000 |
-| IOPS \[T =   16 Byte\] | **195**,000,000 | **550**,000,000 | **470**,000,000 |
-| IOPS \[T =   32 Byte\] | **100**,000,000 | **280**,000,000 | **240**,000,000 |
-| IOPS \[T =   64 Byte\] | 42,000,000 | **130**,000,000 | **90**,000,000 |
-| IOPS \[T =  128 Byte\] | 20,000,000 | 46,000,000 | 33,000,000 |
-| IOPS \[T =  256 Byte\] | 10,000,000 | 22,000,000 | 18,000,000 |
-| IOPS \[T = 1024 Byte\] |  2,500,000 |  4,900,000 |  3,600,000 |
-| IOPS \[T = 4096 Byte\] |    600,000 |  1,200,000 |    900,000 |
+| [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs) | Append | Read | Write | foreach |
+| --- | ---: | ---: | ---: | ---: |
+| IOPS \[T =    8 Byte\] | **345**,000,000 | **1,150**,000,000 | **1,100**,000,000 | 2,580,000 |
+| IOPS \[T =   16 Byte\] | **195**,000,000 | **550**,000,000 | **470**,000,000 | 2,580,000 |
+| IOPS \[T =   32 Byte\] | **100**,000,000 | **280**,000,000 | **240**,000,000 | 2,580,000 |
+| IOPS \[T =   64 Byte\] | 45,000,000 | **130**,000,000 | **90**,000,000 | 2,550,000 |
+| IOPS \[T =  128 Byte\] | 20,000,000 | 46,000,000 | 33,000,000 | 2,450,000 |
+| IOPS \[T =  256 Byte\] | 10,000,000 | 22,000,000 | 18,000,000 | 2,300,000 |
+| IOPS \[T = 1024 Byte\] |  2,500,000 |  4,900,000 |  3,600,000 | 1,750,000 |
+| IOPS \[T = 4096 Byte\] |    600,000 |  1,200,000 |  1,200,000 | 1,000,000 |
 
 &nbsp;　
 ## INSTALL
