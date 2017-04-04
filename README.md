@@ -66,7 +66,7 @@ The benchmark was configured as follows:
 &nbsp;
 ### MemoryStream generic class
 #### [FcsInmemStream&lt;T&gt;](FcsInmemStream.cs) \[where T : struct\]
-   + `Methods:` Append, Close, Length, Position, Read, Seek, Write.
+   + `Methods:` Append, Close, Length, Open, Position, Read, Seek, Write.
 
 ### Source code
 See the [Github](https://github.com/FriendlyCSharp/Databases).
