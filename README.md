@@ -57,10 +57,10 @@ The benchmark was configured as follows:
 
 | &lt;int, uint&gt; | sorted by&nbsp;key | iteration | total&nbsp;(ms) | one time&nbsp;(ns) | speed | IOPS |
 | --- | :---: | ---: | ---: | ---: | :---: | ---: |
-| [**fastDB&lt;...&gt;**](http://www.inmem.cz/inmem_letak.pdf) | **Yes** | 10,000,000 | **101** | **10.08** | **198%** | **100**,000,000 |
-| [**FcsFastBTreeN&lt;...&gt;**](#fcsfastbtreentkey-tvalue) | **Yes** | 10,000,000 | **200** | **20** | **100%** | 43,000,000 |		
-| SortedSet&lt;...&gt; | **Yes** | 10,000,000 | ~~&nbsp;1,230&nbsp;~~ | ~~&nbsp;123&nbsp;~~ | ~~&nbsp;16%&nbsp;~~ | 7,500,000 |
-| HashSet&lt;...&gt; | No | 10,000,000 | 47.3 | 4,73 | 422%	| **200**,000,000 |
+| [**fastDB&lt;...&gt;**](http://www.inmem.cz/inmem_letak.pdf) | **Yes** | 10,000,000 | **100** | **10** | **200%** | **100**,000,000 |
+| [**FcsFastBTreeN&lt;...&gt;**](#fcsfastbtreentkey-tvalue) | **Yes** | 10,000,000 | **200** | **20** | **100%** | 50,000,000 |		
+| SortedSet&lt;...&gt; | **Yes** | 10,000,000 | ~~&nbsp;1,230&nbsp;~~ | ~~&nbsp;123&nbsp;~~ | ~~&nbsp;16%&nbsp;~~ | 8,000,000 |
+| HashSet&lt;...&gt; | No | 10,000,000 | 47.3 | 4,73 | 422%	| **210**,000,000 |
 | Dictionary&lt;...&gt; | No | 10,000,000 | 86.5 | 8,65 | 231% | **115**,000,000 |
 
 &nbsp;
